@@ -8,7 +8,8 @@ This is a Max For Live step sequencer that advances on note-on events and suppor
 ### Changelog
 
 Direct download links below.
-* [DOWNLOAD v1](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v1.amxd) - 2023-09-09 - Initial release.
+* [DOWNLOAD v2](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v2.amxd) - 2023-10-21 - Fixed undo buffer pollution bug. Rookie move.
+* [v1](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v1.amxd) - 2023-09-09 - Initial release.
 
 ## Installation / Setup
 
