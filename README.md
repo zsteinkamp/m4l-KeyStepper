@@ -43,5 +43,6 @@ Each step in the pattern can have a probability of playing a note. This allows y
 ...
 
 ## TODOs
-* ...
+* Add control over number of notes required to advance the step.
+* Add control over note octave.
 
