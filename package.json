@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc",
+    "dev": "yarn install --frozen-lockfile && yarn tsc --watch"
+  },
+  "devDependencies": {
+    "@types/maxmsp": "^1.0.11",
+    "typescript": "^5.5.4"
+  },
+  "prettier": {
+    "printWidth": 100
+  }
+}

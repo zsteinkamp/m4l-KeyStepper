@@ -1,33 +1,28 @@
 autowatch = 1
 outlets = 2
 
-var debugLog = false
+import { logFactory } from "./utils"
 
-var OUTLET_NOTE = 0
-var OUTLET_VELO = 1
+const config = {
+  outputLogs: true
+}
+const log = logFactory(config)
+
+const OUTLET_NOTE = 0
+const OUTLET_VELO = 1
 
 setoutletassist(OUTLET_NOTE, 'Note Number (0-127)')
 setoutletassist(OUTLET_VELO, 'Velocity (0-127)')
 
-function debug() {
-  if (debugLog) {
-    post(
-      debug.caller ? debug.caller.name : 'ROOT',
-      Array.prototype.slice.call(arguments).join(' '),
-      '\n'
-    )
-  }
-}
+log('reloaded')
 
-debug('reloaded')
+const heldNotes: number[] = []
 
-var heldNotes = []
+function note(inNote: number, inVelo: number, _stepNum: number, stepNote: number, stepVelo: number, stepProb: number, absPitch: number) {
+  let outNote = inNote
+  let outVelo = inVelo
 
-function note(inNote, inVelo, stepNum, stepNote, stepVelo, stepProb, absPitch) {
-  var outNote = inNote
-  var outVelo = inVelo
-
-  //debug('note ' + JSON.stringify([inNote, inVelo, stepNum, stepNote, stepVelo, stepProb, absPitch]));
+  //log('note ' + JSON.stringify([inNote, inVelo, _stepNum, stepNote, stepVelo, stepProb, absPitch]));
   if (absPitch) {
     outNote = stepNote
   } else {
@@ -54,3 +49,8 @@ function note(inNote, inVelo, stepNum, stepNote, stepVelo, stepProb, absPitch) {
   outlet(OUTLET_VELO, outVelo)
   outlet(OUTLET_NOTE, outNote)
 }
+
+// NOTE: This section must appear in any .ts file that is directuly used by a
+// [js] or [jsui] object so that tsc generates valid JS for Max.
+const module = {}
+export = {}
