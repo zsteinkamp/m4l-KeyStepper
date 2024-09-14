@@ -10,6 +10,7 @@ This is a Max For Live step sequencer that advances on note-on events and suppor
 
 Direct download links below.
 
+- [v5](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v5/KeyStepper-v5.amxd) - 2024-09-14 - Re-implement JS code in TypeScript with [m4l-typescript-base](https://github.com/zsteinkamp/m4l-typescript-base). No user-visible changes.
 - [v4](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v4.amxd) - 2024-08-09 - Add preset capability.
 - [v3](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v3.amxd) - 2024-02-05 - Fixed problem with multiple instances in one set. Thanks @Michaelknubben!
 - [v2](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v2.amxd) - 2023-10-21 - Fixed undo buffer pollution bug. Rookie move.
@@ -17,7 +18,7 @@ Direct download links below.
 
 ## Installation / Setup
 
-If you just want to download and install the device, then go to the [frozen/](https://github.com/zsteinkamp/m4l-KeyStepper/tree/main/frozen) directory and download the newest .zip file there. You can also download it directly via the links in [_Changelog_](#changelog).
+If you just want to download and install the device, then go to the [Releases page](https://github.com/zsteinkamp/m4l-KeyStepper/releases) and download the newest .amxd file there. You can also download it directly via the links in [_Changelog_](#changelog).
 
 ## Usage
 
