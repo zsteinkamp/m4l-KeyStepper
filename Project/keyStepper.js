@@ -3,7 +3,7 @@ autowatch = 1;
 outlets = 2;
 var utils_1 = require("./utils");
 var config = {
-    outputLogs: true
+    outputLogs: false
 };
 var log = (0, utils_1.logFactory)(config);
 var OUTLET_NOTE = 0;

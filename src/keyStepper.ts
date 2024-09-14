@@ -4,7 +4,7 @@ outlets = 2
 import { logFactory } from "./utils"
 
 const config = {
-  outputLogs: true
+  outputLogs: false
 }
 const log = logFactory(config)
 
