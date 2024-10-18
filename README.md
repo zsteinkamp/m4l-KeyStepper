@@ -10,6 +10,7 @@ This is a Max For Live step sequencer that advances on note-on events and suppor
 
 Direct download links below.
 
+- [v6](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v6/KeyStepper-v6.amxd) - 2024-10-17 - Fix bug that prevented presets from being loaded with the Live Set.
 - [v5](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v5/KeyStepper-v5.amxd) - 2024-09-14 - Re-implement JS code in TypeScript with [m4l-typescript-base](https://github.com/zsteinkamp/m4l-typescript-base). No user-visible changes.
 - [v4](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v4.amxd) - 2024-08-09 - Add preset capability.
 - [v3](https://github.com/zsteinkamp/m4l-KeyStepper/raw/main/frozen/KeyStepper-v3.amxd) - 2024-02-05 - Fixed problem with multiple instances in one set. Thanks @Michaelknubben!
