@@ -3,16 +3,16 @@ autowatch = 1;
 outlets = 2;
 var utils_1 = require("./utils");
 var config = {
-    outputLogs: false
+    outputLogs: false,
 };
 var log = (0, utils_1.logFactory)(config);
 var OUTLET_NOTE = 0;
 var OUTLET_VELO = 1;
-setoutletassist(OUTLET_NOTE, 'Note Number (0-127)');
-setoutletassist(OUTLET_VELO, 'Velocity (0-127)');
-log('reloaded');
+setoutletassist(OUTLET_NOTE, "Note Number (0-127)");
+setoutletassist(OUTLET_VELO, "Velocity (0-127)");
+log("reloaded");
 var heldNotes = [];
-function note(inNote, inVelo, _stepNum, stepNote, stepVelo, stepProb, absPitch) {
+function note(inNote, inVelo, _stepNum, stepNote, stepVelo, stepProb, absPitch, absVelo) {
     var outNote = inNote;
     var outVelo = inVelo;
     //log('note ' + JSON.stringify([inNote, inVelo, _stepNum, stepNote, stepVelo, stepProb, absPitch]));
@@ -29,7 +29,12 @@ function note(inNote, inVelo, _stepNum, stepNote, stepVelo, stepProb, absPitch) 
         heldNotes[inNote] = null;
     }
     if (inVelo > 0) {
-        outVelo += stepVelo - 63;
+        if (absVelo) {
+            outVelo = stepVelo;
+        }
+        else {
+            outVelo += stepVelo - 63;
+        }
         if (stepProb / 100 < Math.random()) {
             outVelo = 0;
         }
