@@ -31,23 +31,44 @@ Add the device to an instrument or MIDI track. Each note you send to the KeyStep
 
 Use the `Steps` dial to control the number of steps in your pattern.
 
-### Reset
-
-Press the `Reset` button to return to the first step in the pattern.
-
 ### Pitch Mode
 
 You can toggle between `Relative` and `Absolute` pitch mode. In `Relative` mode, the incoming note is shifted by the distance that the step's note is from middle C. In `Absolute` mode, the note that is emitted is the step's note.
+
+### Velocity Mode
+
+You can toggle between `Relative` and `Absolute` velocity mode. In `Relative` mode, the incoming note's velocity is shifted by the distance that the step's velocity is from halfway (63). In `Absolute` mode, the velocity that is emitted is the step's velocity.
 
 ### Note Velocity
 
 The velocity slider in the device controls how much to shift the velocity of the
 outgoing note, positive or negative. With the velocity sliders in the middle of
-their travel, the incoming velocity will not be affected.
+their travel, the incoming velocity will not be affected. Set a velocity of zero for a rest.
 
 ### Note Probability
 
 Each step in the pattern can have a probability of playing a note. This allows you to create ever-different patterns that still have a structure. Set the probability to zero to disable a step entirely.
+
+### Randomize (Dice Icon)
+
+Click this button to randomize the currently displayed sequence controls, i.e. if
+you only want to randomize pitches, then make sure Pitch is selected at the top.
+
+### Scale Awareness
+
+Toggle on and off quantizing the emitted note pitch to the current Global Scale.
+
+### Restart
+
+Returns the pattern to the first step.
+
+### Presets
+
+Shift-click a square to store (or overwrite) a snapshot of the device controls as a preset.
+Click in a square to recall the preset.
+Alt-click to delete a preset.
+
+The number above the preset grid displays and controls the currently selected preset. You can modulate that number with a controller to switch presets.
 
 ## Development
 
