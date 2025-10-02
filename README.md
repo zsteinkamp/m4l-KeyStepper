@@ -10,6 +10,7 @@ This is a Max For Live step sequencer that advances on note-on events and suppor
 
 Direct download links below.
 
+- [v9](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v9/KeyStepper-v9.amxd) - 2025-10-01 - Consistent popup experience.
 - [v8](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v8/KeyStepper-v8.amxd) - 2025-05-10 - Make the sequencer restart on transport play; Add Scale Awareness; Add randomize function; Add Absolute / Relative velocity mode. Thank you Michael Knubben for the suggestions!
 - [v7](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v7/KeyStepper-v7.amxd) - 2024-10-29 - Add non-blocking telemetry ping on load. Does not send any identifying information, only the plugin name, the local computer name, type of computer, and CPU type. I just want to see which plugins are used the most.
 - [v6](https://github.com/zsteinkamp/m4l-KeyStepper/releases/download/v6/KeyStepper-v6.amxd) - 2024-10-17 - Fix bug that prevented presets from being loaded with the Live Set.
